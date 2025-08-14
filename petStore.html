@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Pet Shop</title>
+    
+    <style>
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 90px;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+        
+        .navleft {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 18%;
+        }
+        
+        .body {
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        
+        .navright {
+            display: flex;
+            flex-direction: row;
+            width: 30%;
+            justify-content: space-evenly;
+        }
+        
+        .options {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .list {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(255, 233, 204);
+            width: 100%;
+            margin-top: 10px;
+            height: 300px;
+            border: 1px solid black;
+            border-radius: 20px;
+            overflow: hidden;
+            align-items: center;
+        }
+        
+        .petimage {
+            background-color: rgb(254, 189, 103);
+            width: 40%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .info {
+            width: 58%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 20px;
+        }
+
+        .info h1 {
+            border-bottom: 3px solid black;
+        }
+
+        .info p {
+            margin: 30px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .arrow-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 2%;
+        }
+
+        .arrow-button button {
+            font-size: 40px;
+            background-color: rgb(255, 164, 46);
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 100px;
+            margin-right: 10px;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        h1, h2, .options {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body class="body">
+
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="navleft">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQECQl6LrLvv91qFeQYm9BNWL8_Y05woCBFQ&s" alt="Pet Shop Logo" style="width: 75px; height: 75px; border-radius: 50px; padding: 10px;">
+                    <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Akash Pet Shop</h1>
+                </div>
+                <div class="navright">
+                    <a href="" class="options">Categories</a>
+                    <a href="" class="options">Contact us</a>
+                    <a href="" class="options">Help</a>
+                    <a href="" class="options">Login | Register</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="list">
+        <div class="petimage">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Male_adult_bolognese_dog_%28cropped%29.jpg/500px-Male_adult_bolognese_dog_%28cropped%29.jpg" alt="Soffy - Bolognese" style="width: 400px; height: 280px; border-radius: 10px;">
+        </div> 
+        <div class="info">
+            <h1 style="border-bottom: 3px solid black;">Soffy</h1>
+            <h2>Type - Bolognese</h2>
+            <p style="margin: 30px;">The Bolognese has a distinctive single coat (no undercoat) that falls in loose ringlets all over the body. The hair's texture is woolly, not silky, and requires regular combing to prevent matting. They are known for their playful and affectionate nature.</p>
+        </div>
+        <div class="arrow-button">
+            <button onclick="window.location.href='petDetails.html'"><b>></b></button>
+        </div>
+    </div>
+
+    <div class="list">
+        <div class="petimage">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Standing_Bernese_Mountain_Dog_Female_%28cropped%29.jpg/500px-Standing_Bernese_Mountain_Dog_Female_%28cropped%29.jpg" alt="Max - Bernese Mountain Dog" style="width: 260px; height: 280px; border-radius: 10px;">
+        </div> 
+        <div class="info">
+            <h1 style="border-bottom: 3px solid black;">Max</h1>
+            <h2>Type - Bernese Mountain Dog</h2>
+            <p style="margin: 30px;">The Bernese Mountain Dog, or Berner Sennenhund, is a large breed from the Swiss Alps. They are a "Sennenhund-type" breed with roots in Roman mastiffs. Historically, they were used as general farm dogs and to pull carts as draft animals, making them strong and versatile companions.</p>
+        </div>
+        <div class="arrow-button">
+            <button onclick="window.location.href='petDetails.html'"><b>></b></button>
+        </div>
+    </div>
+
+    <div class="list">
+        <div class="petimage">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/%282%29_Irish_Wolfhound_4.jpg/500px-%282%29_Irish_Wolfhound_4.jpg" alt="Jimmy - Irish Wolfhound" style="width: 400px; height: 280px; border-radius: 10px;">
+        </div> 
+        <div class="info">
+            <h1 style="border-bottom: 3px solid black;">Jimmy</h1>
+            <h2>Type - Irish Wolfhound</h2>
+            <p style="margin: 30px;">The Irish Wolfhound is known for its massive size. It is more heavily built than a Scottish Deerhound but less so than a Great Dane. Minimum heights can be up to 32 inches at the shoulder for males, making them one of the tallest dog breeds in the world.</p>
+        </div>
+        <div class="arrow-button">
+            <button onclick="window.location.href='petDetails.html'"><b>></b></button>
+        </div>
+    </div>
+
+    <div class="list">
+        <div class="petimage">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Szpic_miniaturowy_Volpino_MWPR_Katowice_2008_%28cropped%29.JPG/500px-Szpic_miniaturowy_Volpino_MWPR_Katowice_2008_%28cropped%29.JPG" alt="Anku - Volpino Italiano" style="width: 400px; height: 280px; border-radius: 10px;">
+        </div> 
+        <div class="info">
+            <h1 style="border-bottom: 3px solid black;">Anku</h1>
+            <h2>Type - Volpino Italiano</h2>
+            <p style="margin: 30px;">The Volpino Italiano is a small dog with a long coat that stands away from its body. The coat is typically white, deep red, or black. They are known to be vigilant and energetic, making them excellent watchdogs despite their small size.</p>
+        </div>
+        <div class="arrow-button">
+            <button onclick="window.location.href='petDetails.html'"><b>></b></button>
+        </div>
+    </div>
+</body>
+</html>

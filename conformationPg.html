@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Confirmation</title>
+    
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .confirmation-card {
+            width: 520px;
+            max-width: 95%;
+            background: rgb(255, 223, 180);
+            border-radius: 10px;
+            border: 1px solid black;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+            padding: 22px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .confirmation-card h1 {
+            margin: 0 0 12px 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            display: inline-block;
+            border-bottom: 3px solid #333;
+            padding-bottom: 6px;
+        }
+
+        .confirmation-card h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .confirmation-card p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            margin-top: 16px;
+            display: grid;
+            gap: 10px;
+            font-size: 16px;
+        }
+
+        .info .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 12px;
+            background: rgba(0,0,0,0.02);
+            border-radius: 8px;
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .info .label {
+            font-weight: 700;
+            color: #333;
+        }
+
+        .info .value {
+            color: #111;
+            font-weight: 600;
+        }
+
+        .fact {
+            margin-top: 18px;
+            background: rgb(249, 170, 67);
+            color: #fff;
+            padding: 12px 14px;
+            border-radius: 10px;
+            font-style: italic;
+            line-height: 1.3;
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .actions {
+            margin-top: 18px;
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            background: rgb(252, 177, 80);
+            color: black;
+            border: 1px solid black;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+
+        .done-btn {
+            background: aquamarine;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <a href="adoptionForm.html" style="position: fixed; top: 12px; left: 10px; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background-color: rgb(252, 177, 80); border-radius: 50%; font-weight: 700; cursor: pointer; border: 1px solid black; box-shadow: 0 2px 6px rgba(0,0,0,0.08); text-decoration: none; color: black; font-size: 24px;">&lt;</a>
+
+    <div class="confirmation-card">
+        <h1>Adoption Confirmed!</h1>
+        <p>Thank you, <b>John Doe</b>, for your interest in adopting <b>Anku</b>. Your request has been received and is now being reviewed by our team.</p>
+
+        <h2>Request Details</h2>
+
+        <div class="info">
+            <div class="row"><div class="label">Pet Name</div><div class="value">Anku</div></div>
+            <div class="row"><div class="label">Applicant</div><div class="value">John Doe</div></div>
+            <div class="row"><div class="label">Request Number</div><div class="value">#A12345</div></div>
+        </div>
+
+        <div class="fact">🐾 Fun Fact: A dog’s nose print is unique — just like a human fingerprint.</div>
+
+        <div class="actions">
+            <a href="petStore.html" class="button">Back to Pet Details</a>
+            <a href="petStore.html" class="button done-btn">Done</a>
+        </div>
+    </div>
+</body>
+</html>
