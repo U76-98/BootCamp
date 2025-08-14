@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function a(){
+            name = "nivas";
+            var x = "102";
+            //debugger;
+            console.log(x);
+            x = "neev";
+            console.log(x);
+
+            let y = 0;
+            while(y<5){
+                console.log(y);
+                y++;
+            }
+        }
+        //a()
+        //console.log(name);
+        //console.log(x);
+
+        function array(){
+
+            
+            var a = ['9','8','7'];
+            //console.log(a);
+            a.push('6');
+            a.push('5');
+            //console.log(a);
+            a.pop();
+            //console.log(a);
+            //(9 8 7 6)
+            var ipVal = document.getElementById("ip").value;
+            //a.shift();
+            //console.log(a);
+            //for(let i = 0; i<a.length ; i++){
+            //    console.log(a[i]);
+            //}
+            a.forEach(
+                /*(h)=>
+                {
+                    console.log(h) // value of h is each elemenet of the array
+                    console.log(a)
+                }*/
+
+                /*(aValues)=>{
+                    var bdyName = document.createElement("h1");
+                    bdyName.innerHTML = aValues;
+                    document.body.appendChild(bdyName);
+                }
+                //to prit all the values
+                */
+                (aValues)=>{
+                    if(aValues == ipVal){
+                        /*var valPrint = document.createElement("h1");
+                        valPrint.innerHTML = aValues;
+                        document.body.appendChild(valPrint);*/
+                        console.log("For each found it");
+                    }
+                    else{
+                        console.log("Not found");
+                    }
+                }
+                //Seach using forEach
+                
+            )
+
+            var result = a.filter(
+                (aValues)=>{
+                    return aValues == ipVal;
+                }
+            );
+            console.log("filter" + result);
+
+            var mapR = a.map(
+                (aValues)=>{
+                    return aValues == ipVal;
+                }
+            );
+            console.log("map" + mapR);
+
+        }
+
+        function d4(){
+            var student = {
+                name : "Nivas",
+                age : 20
+            }
+            student["place"] = "Mangalore";
+            student["age"] = 21;
+            console.log(student);
+        }
+    </script>
+</head>
+<body id="body" onload=d4()>
+    <input type="number" id="ip" onChange=array()>
+</body>
+</html>

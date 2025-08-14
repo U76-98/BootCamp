@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    function data(){
+        var resume_heading = document.createElement("h1");
+        resume_heading.innerHTML = "Resume";
+
+        document.body.appendChild(resume_heading);
+
+        var resume_content = document.createElement("p");
+        resume_content.innerHTML = `
+        <b>Nivas</b><br>
+        B.E. Computer Science, SCEM<br>
+        Skills: Python, Java, HTML, CSS, JS<br>
+        Projects: Student Management System, Portfolio Website<br>
+        Email: nivas@email.com | Mangalore<br>
+        `;
+
+        document.body.appendChild(resume_content);
+    }
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="data()">
+</body>
+</html>

@@ -1,0 +1,51 @@
+.body{
+    background-color: #fefedf;
+}
+.logo{
+    width: 75px;
+    height: 75px;
+}
+.topbar{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    align-items: center;
+    padding: 10px;
+    background-color: #d2dfbd;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.topbar-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 24%;
+    justify-content: space-evenly;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.topbar-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 43%;
+    justify-content: space-evenly;
+}
+.option{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    background-color: #a5c29f;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.bookingTab{
+    width : 98%;
+    height : 550px;
+    background-color: #d2dfbd;
+    margin-top: 17px;
+    border-radius: 10px;
+}

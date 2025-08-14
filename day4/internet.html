@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetching</title>
+    <script>
+        function fetchData() {
+            var datda;
+            fetch("https://jsonplaceholder.typicode.com/todos")
+            .then((data)=>data.json())
+            .then((data)=> {
+                  var text = document.createElement("h1");
+            text.innerText = JSON.stringify(data);
+            document.body.appendChild(text);
+            })
+            
+            console.log("Data fetcting");
+        }
+    </script>
+</head>
+<body onload="fetchData()">
+    
+</body>
+</html>

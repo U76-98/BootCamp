@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student details</title>
+    <script>
+        var studentDetails = []
+
+        function addStudent(){
+            var name = document.getElementById("name").value;
+            var usn = document.getElementById("USN").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var branch = document.getElementById("branch").value;
+
+            if(name == "" || usn == "" || email == "" || phone == "" || branch == ""){
+                alert("Please fill all the fields");
+            }
+            else{
+                console.log(studentDetails);
+            alert("Student details added successfully!");
+
+            studentDetails.push({
+                name: name,
+                usn: usn,
+                email: email,
+                phone: phone,
+                branch: branch
+            });
+
+            var box = document.createElement("div");
+                box.style.padding = "10px";
+                box.style.marginTop = "10px";
+                box.style.width = "100%";
+                box.style.borderTop = "2px solid black";
+                box.style.borderRadius = "10px";
+                box.style.backgroundColor = "antiquewhite";
+                box.style.border = "2px solid black";
+                document.body.appendChild(box);
+
+            var studentInfo = document.createElement("h2");
+            studentInfo.style = "color: blue; font-family: 'Courier New', Courier, monospace;";
+            studentInfo.innerHTML = `<h1>Student ${studentDetails.length}</h1> 
+                Name: ${studentDetails[studentDetails.length - 1].name} <br>
+                USN: ${studentDetails[studentDetails.length - 1].usn} <br>
+                Email: ${studentDetails[studentDetails.length - 1].email} <br>
+                phone: ${studentDetails[studentDetails.length - 1].phone} <br>
+                Branch: ${studentDetails[studentDetails.length - 1].branch}`;
+            studentInfo.style.textAlign = "center";
+            box.appendChild(studentInfo);
+
+            }
+        }
+    </script>
+</head>
+<body id="body">
+    <center>
+        <h1 style="font-family: 'Courier New', Courier, monospace; margin-top: 200px;">Student Details</h1>
+        <div style=" width: 250px; border: 2px solid black; padding: 20px; border-radius: 10px; background-color:antiquewhite;">
+            <input type="text" id="name" placeholder="Student name" style="font-size: larger; margin-bottom: 5px; border-radius: 5px;">
+            <input type="number" id="USN" placeholder="USN" style="font-size: larger; margin-bottom: 5px; border-radius: 5px;">
+            <input type="email" id="email" placeholder="Email" style="font-size: larger; margin-bottom: 5px; border-radius: 5px;">
+            <input type="number" id="phone" placeholder="Phone number" style="font-size: larger; margin-bottom: 5px; border-radius: 5px;">
+            <input type="text" id="branch" placeholder="Branch" style="font-size: larger; margin-bottom: 20px; border-radius: 5px;"> 
+            <input type="submit" value="Add Student" onclick="addStudent()" style="font-size: larger; background-color: lightblue; border-radius: 5px;">
+        </div>
+    </center>
+</body>
+</html>

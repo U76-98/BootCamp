@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script>
+        function login() {
+            var Username = document.getElementById("username").value;
+            var Password = document.getElementById("password").value;
+
+            var body = {
+                "username": Username,
+                "password": Password
+            };
+            var request = {
+                method : 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(body)
+            };
+            fetch('http://localhost:3000/submit',
+            request,)
+            .then((response) => response.json())
+            .then((data)=>{ var text = document.createElement("p");
+            text.innerHTML = JSON.stringify(data, null, 2) ;
+            document.body.appendChild(text);})
+        }
+
+    </script>
+</head>
+<body class = "body">
+    <h1>Login Form</h1>
+    <form>
+        <input type="text" placeholder="Username" id="username">
+        <input type="password" placeholder="Password" id="password">
+        <button type="button" onclick=login()>Login</button>
+    </form>
+</body>
+</html>

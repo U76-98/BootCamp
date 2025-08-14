@@ -1,0 +1,15 @@
+Student Name: nivas
+Phone Number: 77
+USN: 77
+Department: 88
+
+Student Name: nivas
+Phone Number: 9873
+USN: 8362
+Department: 837
+
+Student Name: not
+Phone Number: 875
+USN: 8364
+Department: u27648
+
